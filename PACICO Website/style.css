@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+    background: #ff7366;
+}
+header{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+    position: relative;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #000;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+header ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #f5bc00;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+header ul li:hover::after{
+    width: 100%;
+}
+.homepage {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homepage img{
+    position: absolute;
+    top: 110px;
+    z-index: 1;
+}
+.home-content{
+    width: 100%;
+    position: absolute;
+    top: 200px;
+    left: 90px;
+    font-size: x-large;
+    text-align: justify;
+    color: #000;
+}
+.home-content #greeting{
+    font-family: 'Legio Sabina Halftone Regular', sans-serif;
+    font-size: 7.5vw;
+}
+.homepage #btn{
+    position: absolute;
+    left: 90px;
+    top: 550px;
+    text-decoration: none;
+    padding: 8px 20px;
+    background: #fff;
+    color: #ce100b;
+    border-radius: 20px;
+    font-size: 1.5em;
+}
+.info{
+    position: relative;
+    right: 0px;
+    top: 950px;
+    padding: 100px;
+}
+.info::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -170px;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top, #ffff66, transparent);
+    z-index: 1000;
+}
+.info h2{
+    font-size: 3.5em;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.info p{
+    font-size: 1em;
+    text-align: right;
+}
+.info img{
+    position: absolute;
+    top: -100px;
+    left: -50px;
+}
+.info #sideborder{
+    position: absolute;
+    left: 100px;
+}
+.perks{
+    background-size: 100vh;
+    position: relative;
+    top: 70em;
+    background: #ffff66;
+    padding: 100px;
+}
+.perks::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 42em;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top, #ce100b, transparent);
+    z-index: 2000;
+}
+.perks h2{
+    font-size: 5em;
+    text-align: center;
+}
+.perks p{
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+.perks img{
+    position: absolute;
+    top: -10px;
+    left: -1px;
+}
+.work-info{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10em;
+}
+.work-info span{
+    font-size: 10em;
+}
+.work-info h2{
+    font-size: 1em;
+}
+.contacts{
+    background-size: 100vh;
+    position: relative;
+    top: 66em;
+    background: #ce100b;
+    padding: 100px;
+    z-index: 1000;
+}
+.contact-data{
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    gap: 1em;
+    font-size: 2em;
+}
+.contact-data span{
+    font-size: 1em;
+}
+.contacts a{
+    padding-top: 200px;
+    font-size: 50px;
+    color: #fff;
+    margin: 0 20px;
+    transition: all .3s ease;
+}
+.contacts a:hover{
+    color: #ff7366;
+}
+.contacts img{
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    width: 80%;
+    z-index: -1;
+    filter: opacity(30%)
+}
+.contacts iframe {
+    position: absolute;
+    top: 5em;
+    left: 45em;
+}
+
+@media only screen and (max-width:700px){
+    header .logo img{
+        float: left;
+        width: 70vh;
+        height: auto;
+    }
+    .homepage img{
+        position: absolute;
+        top: 100px;
+        width: 100px;
+        z-index: 1;
+    }
+}
